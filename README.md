@@ -1,15 +1,19 @@
-# Homework: Files and Folders
-📁📁📁📁📁📁📁📁📁📁📁📁📁
+# Homework: Annotating One-to-Many and Many-to-One Relationships
 
 ### Learning Objectives
 
-- Understand the relationships
-- Be able to implement one-to-many relationships between models with Spring JPA + Hibernate
-- Be able to Spring Data REST to create the RESTful routes for a set of resources
+- Understand the relationships, one to many and many to many
+- Be able to use Spring Data REST to create the RESTful routes for a set of resources
+- Use insomia to GET, POST, PUT and DELETE records
+
 
 ## Brief
 
-Create a one-to-many Spring application using annotations. Your application should have the following models: `Folders`, `Files` and `Users`. Users should have many folders, and folders should have many files.
+Create a one-to-many Spring application using annotations as you've done before.
+
+ Your application should have the following models: `Folders`, `Files` and `Users`. Users should have many folders, and folders should have many files.
+
+Note: you don't need **any** controllers - Spring Data Rest should handle all of these.
 
 ### MVP
 
@@ -25,10 +29,11 @@ Create a one-to-many Spring application using annotations. Your application shou
   - A `Folder` should have:
      - a title
      - list of files
-
-- Test with Data Loader, running the application and manually inspecting postgres
-- Enable Spring Data REST to create the RESTful routes
-- Test GET and POST routes using Insomia REST Client
+     - a user
+     
+- Creata a seeding file `DataLoader` component to pre-seed the database.
+- Test with unit tests and manually inspecting postgres
+- Enable Spring Data REST to create the RESTful routes to GET, POST, PUT, and DELETE
 
 ## Planning
 
